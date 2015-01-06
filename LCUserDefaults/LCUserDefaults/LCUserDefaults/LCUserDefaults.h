@@ -18,9 +18,6 @@
 @interface LCUserDefaults : NSObject
 
 
-+ (LCUserDefaults *)levelDBWithPath:(NSString *)path error:(NSError **)errorOut;
-
-
 #pragma mark -
 
 

@@ -24,6 +24,7 @@
 
 @implementation LCUserDefaults
 
+
 NS_INLINE leveldb::Slice SliceByString(NSString *string)
 {
     if (!string) return NULL;
@@ -48,7 +49,9 @@ NS_INLINE NSString *StringBySlice(const leveldb::Slice &slice)
     _db = NULL;
 }
 
+
 #pragma mark -
+
 
 +(instancetype) defaultDB
 {
@@ -107,7 +110,9 @@ NS_INLINE NSString *StringBySlice(const leveldb::Slice &slice)
     return self;
 }
 
+
 #pragma mark -
+
 
 - (NSString *)stringForKey:(NSString *)aKey
 {
@@ -190,7 +195,9 @@ NS_INLINE NSString *StringBySlice(const leveldb::Slice &slice)
     return value;
 }
 
+
 #pragma mark -
+
 
 - (BOOL)setString:(NSString *)value forKey:(NSString *)aKey
 {
@@ -253,7 +260,9 @@ NS_INLINE NSString *StringBySlice(const leveldb::Slice &slice)
     return status.ok();
 }
 
+
 #pragma mark -
+
 
 - (BOOL)removeObjectForKey:(NSString *)aKey
 {
@@ -265,7 +274,9 @@ NS_INLINE NSString *StringBySlice(const leveldb::Slice &slice)
     return status.ok();
 }
 
+
 #pragma mark -
+
 
 - (NSArray *)allKeys
 {
@@ -293,7 +304,9 @@ NS_INLINE NSString *StringBySlice(const leveldb::Slice &slice)
     delete iter;
 }
 
+
 #pragma mark -
+
 
 - (BOOL)removeAllObjects
 {
@@ -312,7 +325,9 @@ NS_INLINE NSString *StringBySlice(const leveldb::Slice &slice)
     return [[NSFileManager defaultManager] removeItemAtPath:_path error:NULL];
 }
 
+
 #pragma mark -
+
 
 -(id) objectForKeyedSubscript:(id)key
 {
@@ -322,6 +337,7 @@ NS_INLINE NSString *StringBySlice(const leveldb::Slice &slice)
 {
     [self setObject:object forKey:(NSString *)key];
 }
+
 
 #pragma mark -
 

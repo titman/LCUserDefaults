@@ -30,7 +30,7 @@
    
     NSString * result = [LCUserDefaults defaultDB][@"TEST_KEY"]; // or [[LCUserDefaults defaultDB] objectForKey:(NSString *)]
     
-    NSLog(@"Read result = [ %@ ]",result);
+    NSLog(@"Read result [ %@ ]",result);
     
     
     

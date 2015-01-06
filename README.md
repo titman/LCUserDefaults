@@ -1,4 +1,4 @@
 LCUserDefaults
 ==============
 
-A local storage strategy, faster, safer and eleganter than NSUserDefaults.
+A local storage strategy, faster, safer, simpler and eleganter than NSUserDefaults.

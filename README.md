@@ -1,7 +1,7 @@
 LCUserDefaults
 ==============
 
-A local storage strategy, faster, safer, simpler and eleganter than NSUserDefaults. ( 替代NSUserDefaults的绝佳方案！ )
+A local storage strategy, faster, safer, simpler and eleganter than NSUserDefaults. 
 
 
 Example

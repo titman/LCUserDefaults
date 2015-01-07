@@ -15,8 +15,8 @@
 		13B6D50E1A5BCD5A0006387E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B6D50D1A5BCD5A0006387E /* Images.xcassets */; };
 		13B6D5111A5BCD5A0006387E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B6D50F1A5BCD5A0006387E /* LaunchScreen.xib */; };
 		13B6D51D1A5BCD5B0006387E /* LCUserDefaultsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B6D51C1A5BCD5B0006387E /* LCUserDefaultsTests.m */; };
-		13B6D53D1A5BCE780006387E /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13B6D53A1A5BCE780006387E /* libleveldb.a */; };
 		13B6D53E1A5BCE780006387E /* LCUserDefaults.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B6D53C1A5BCE780006387E /* LCUserDefaults.mm */; };
+		BF69DA921A5D2FB90004BAA8 /* libleveldb.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF69DA911A5D2FB90004BAA8 /* libleveldb.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,9 +58,9 @@
 		13B6D5371A5BCE780006387E /* table.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table.h; sourceTree = "<group>"; };
 		13B6D5381A5BCE780006387E /* table_builder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = table_builder.h; sourceTree = "<group>"; };
 		13B6D5391A5BCE780006387E /* write_batch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = write_batch.h; sourceTree = "<group>"; };
-		13B6D53A1A5BCE780006387E /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libleveldb.a; sourceTree = "<group>"; };
 		13B6D53B1A5BCE780006387E /* LCUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCUserDefaults.h; sourceTree = "<group>"; };
 		13B6D53C1A5BCE780006387E /* LCUserDefaults.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = LCUserDefaults.mm; sourceTree = "<group>"; };
+		BF69DA911A5D2FB90004BAA8 /* libleveldb.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libleveldb.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13B6D53D1A5BCE780006387E /* libleveldb.a in Frameworks */,
+				BF69DA921A5D2FB90004BAA8 /* libleveldb.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,7 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				13B6D52B1A5BCE780006387E /* include */,
-				13B6D53A1A5BCE780006387E /* libleveldb.a */,
+				BF69DA911A5D2FB90004BAA8 /* libleveldb.a */,
 			);
 			path = LevelDB;
 			sourceTree = "<group>";
@@ -496,6 +496,7 @@
 				13B6D5221A5BCD5B0006387E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		13B6D5231A5BCD5B0006387E /* Build configuration list for PBXNativeTarget "LCUserDefaultsTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +505,7 @@
 				13B6D5251A5BCD5B0006387E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

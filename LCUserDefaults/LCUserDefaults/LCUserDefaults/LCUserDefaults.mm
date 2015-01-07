@@ -333,6 +333,7 @@ NS_INLINE NSString *StringBySlice(const leveldb::Slice &slice)
 {
     return [self objectForKey:key];
 }
+
 -(void) setObject:(id)object forKeyedSubscript:(id<NSCopying>)key
 {
     [self setObject:object forKey:(NSString *)key];

@@ -23,14 +23,15 @@
     
     // Testing . . .
     
+    NSLog(@"Will write '123' to db.");
     
-    BOOL finished = [LCUserDefaults defaultDB][@"TEST_KEY"] = @"123"; // or [[LCUserDefaults defaultDB] setObject:(id) forKey:(NSString *)]
+    [LCUserDefaults defaultDB][@"TEST_KEY"] = @"123"; // or [[LCUserDefaults defaultDB] setObject:(id) forKey:(NSString *)]
     
-    NSLog(@"Write finished [ %@ ]",finished ? @"YES" : @"NO");
+    NSLog(@"Write finished.");
    
     NSString * result = [LCUserDefaults defaultDB][@"TEST_KEY"]; // or [[LCUserDefaults defaultDB] objectForKey:(NSString *)]
     
-    NSLog(@"Read result [ %@ ]",result);
+    NSLog(@"Read from db, result [ %@ ]",result);
     
     
     

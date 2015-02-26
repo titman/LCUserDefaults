@@ -8,13 +8,13 @@ Example
 ==============
     
     
-    NSLog(@"Will write '123' to db. (%@)",[LCUserDefaults defaultDB].path);
+    NSLog(@"Will write '123' to  db. (Path : %@)",LCUserDefaults.DB.path);
     
-    [LCUserDefaults defaultDB][@"TEST_KEY"] = @"123"; // or [[LCUserDefaults defaultDB] setObject:(id) forKey:(NSString *)]
+    LCUserDefaults.DB[@"TEST_KEY"] = @"123"; // or [[LCUserDefaults defaultDB] setObject:(id) forKey:(NSString *)
     
     NSLog(@"Write finished.");
    
-    NSString * result = [LCUserDefaults defaultDB][@"TEST_KEY"]; // or [[LCUserDefaults defaultDB] objectForKey:(NSString *)]
+    NSString * result = LCUserDefaults.DB[@"TEST_KEY"]; // or [[LCUserDefaults defaultDB] objectForKey:(NSString *)]
     
     NSLog(@"Read from local db, result [ %@ ]",result);
     

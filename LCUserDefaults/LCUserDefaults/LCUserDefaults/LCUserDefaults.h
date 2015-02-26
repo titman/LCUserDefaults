@@ -10,6 +10,7 @@
 #include <stdio.h>
 #include <dirent.h>
 
+#define $USE_SHOT_NAME ( $ )
 
 #undef  $DEFAULT_NAME
 #define $DEFAULT_NAME @"/LCUserDefaults/"
@@ -22,7 +23,12 @@
 #pragma mark -
 
 
+#ifdef $USE_SHOT_NAME
+/** It will create DB file in /Documents/LCUserDefaults/. */
++(instancetype) DB;
+#else
 +(instancetype) defaultDB;
+#endif
 
 
 #pragma mark -

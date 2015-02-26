@@ -51,7 +51,11 @@ NS_INLINE NSString *StringBySlice(const leveldb::Slice &slice)
 #pragma mark -
 
 
+#ifdef $USE_SHOT_NAME
++(instancetype) DB
+#else
 +(instancetype) defaultDB
+#endif
 {
     static LCUserDefaults * sharedInstance = nil;
     static dispatch_once_t onceToken;
@@ -62,9 +66,7 @@ NS_INLINE NSString *StringBySlice(const leveldb::Slice &slice)
         sharedInstance = [[self class] db:[path stringByAppendingString:$DEFAULT_NAME]];
     });
     
-    return sharedInstance;
-    
-    
+    return sharedInstance;    
 }
 
 +(instancetype) db:(NSString *)path

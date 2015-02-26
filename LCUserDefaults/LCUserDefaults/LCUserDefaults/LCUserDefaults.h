@@ -17,6 +17,7 @@
 
 @interface LCUserDefaults : NSObject
 
+@property(nonatomic,strong) NSString * path;
 
 #pragma mark -
 

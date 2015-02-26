@@ -18,8 +18,6 @@
     leveldb::WriteOptions _writeOptions;
 }
 
-@property(nonatomic,strong) NSString * path;
-
 @end
 
 @implementation LCUserDefaults

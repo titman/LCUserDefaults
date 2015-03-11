@@ -3,6 +3,8 @@ LCUserDefaults
 
 A local storage strategy, faster, safer, simpler and eleganter than NSUserDefaults. 
 
+LCUserDefaults use LEVEL-DB.
+LevelDB、TreeDB、SQLite3 performance test: http://www.oschina.net/question/12_25944
 
 Example
 ==============
